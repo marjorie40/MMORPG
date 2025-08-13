@@ -21,6 +21,7 @@ public int getSoin() {
         return soin;
 }
 public void setSoin(int soin) {
+    //seulement des entiers de 0 à 100 / pas de caractere ou special
         this.soin = soin;
 }
 

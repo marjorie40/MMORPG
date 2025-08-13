@@ -26,7 +26,7 @@ public class Personnages {
 
     @Override
     public String toString() {
-        return "!!"+this.getNom() +" "+ this.getRace()+" "+ this.getClasse()+" "+ this.getGroupe()+" "+ this.getPointsDeVie()+" !!";
+        return "!!"  +this.getNom() +" "+ this.getRace()+" "+ this.getClasse()+" "+ this.getGroupe()+" "+ this.getPointsDeVie()+" !!";
         //return this.getPersonnages().toString();
     }
 
@@ -34,6 +34,7 @@ public class Personnages {
         return pointsDeVie;
     }
     public void setPointsDeVie(int pointsDeVie) {
+        //seulement des entiers de 0 à 100 / pas de caractere ou special
         this.pointsDeVie = pointsDeVie;
     }
     public String getNom() {
@@ -47,28 +48,32 @@ public class Personnages {
         return race;
     }
     public void setRace(String race) {
+        //seulement HUMAIN, GNOME, ORQUE
         this.race = race;
     }
     public String getClasse() {
         return classe;
     }
     public void setClasse(String classe) {
+        //seulement une fille (guerrier ou soigneur)
         this.classe = classe;
     }
     public String getGroupe() {
         return groupe;
     }
     public void setGroupe(String groupe) {
+        //seulement des entiers 1 ou 2 ou 3 / pas de caractere ou special
         this.groupe = groupe;
     }
 
-    List<Personnages> getPersonnages() {
-        List<Personnages> personnages = new ArrayList<>();
-        // personnages.add(this); pourquoi ??
+    /*public static List<Personnages> getPersonnages() {
+        List<Personnages> personnages = new ArrayList<Personnages>();
+        personnages.add(Personnages.getPersonnages().get(0));
+        personnages.add(Personnages.getPersonnages().get(1));
+        personnages.add(Personnages.getPersonnages().get(2));
 
         return personnages;
-    }
-
+    }*/
 
 }
 
