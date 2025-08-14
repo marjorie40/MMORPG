@@ -32,9 +32,15 @@ public class Guerriers extends Personnages {
                 + this.getPointsDeVie() + this.getForce();
     }
 
+    Guerriers guerrier1 = new Guerriers ("Gaetan", "HUMAIN", "léger", "1", 100,80);
+    Guerriers guerrier2 = new Guerriers ("Georgina", "ORQUE", "lourd", "2", 100,95);
 
-    private static List<Guerriers> listeGuerriers = new ArrayList<Guerriers>(); {
+    public static List<Guerriers> listeGuerriers = new ArrayList<Guerriers>();{
         for (int i = 0; i <= listeGuerriers.size(); i++) {
+            listeGuerriers.add(guerrier1);
+            listeGuerriers.add(guerrier2);
+
+            System.out.println(i + " " + listeGuerriers.size());
 
             //listeGuerriers.add(listeGuerriers.set());
 

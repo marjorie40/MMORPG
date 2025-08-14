@@ -13,7 +13,7 @@ public class VueRPG {
 
 
     public static void viewUser() {
-        System.out.println("Veuillez choisir votre personnage parmis les Guerriers et Soigneurs. ");
+        System.out.println("Veuillez choisir votre personnage parmi les Guerriers et Soigneurs. ");
         System.out.println("Voici les personnages : "); // afficher liste des soigneurs et liste des guerriers
         System.out.println("1. Je souhaite être un guerrier");
         System.out.println("2. Je souhaite être un soigneur");
@@ -22,9 +22,4 @@ public class VueRPG {
         System.out.print(" Faites votre choix : ");
 
     }
-
-
-
-
-
 }

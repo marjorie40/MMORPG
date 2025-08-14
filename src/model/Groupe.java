@@ -12,7 +12,7 @@ public class Groupe {
     public String groupe3;
 
 
-    public Groupe(String nom, Guerriers guerrier, Soigneurs soigneur) {
+    public Groupe(String setNom, Guerriers setGuerrier, Soigneurs setSoigneur) {
         this.setNom(nom);
         this.setGuerriers(guerrier);
         this.setSoigneurs(soigneur);

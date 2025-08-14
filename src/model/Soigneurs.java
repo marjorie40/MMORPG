@@ -21,8 +21,10 @@ public int getSoin() {
         return soin;
 }
 public void setSoin(int soin) {
-    //seulement des entiers de 0 à 100 / pas de caractere ou special
+    if (soin <= 50 ||soin > 100) { //seulement des entiers de 0 à 100
+        throw new IllegalArgumentException("Veuillez choisir un groupe valide. ");
+    } else {
         this.soin = soin;
+    }
 }
-
 }
